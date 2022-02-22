@@ -80,6 +80,12 @@
     padding: 0.5rem 0.8rem 0.5rem 0.8rem;
 }
 
+.button:hover {
+    background-color: #f0b7b5;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 
 
 
@@ -89,7 +95,7 @@
     display: grid;
     grid-template-rows: auto;
     background-color: #df645f;
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
     margin: 2rem 3rem 2rem 3rem;
 }
 
@@ -109,6 +115,12 @@
     background-color: #be5551;
     border-radius: 0.2rem;
     padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
+
+.buttondark:hover {
+    background-color: #541c1f;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 #clock {
@@ -138,6 +150,10 @@
     margin: 1rem 3rem 1rem 3rem;
 }
 
+#startbutton:hover {
+    background-color: #541c1f;
+    cursor: pointer;
+}
 
 
 
@@ -184,6 +200,11 @@ hr {
     margin: 1rem 0 1rem 2rem;
 }
 
+#whitebox1:hover, #whitebox2:hover {
+    background-color: #f0b7b5;
+    cursor: pointer;
+}
+
 #addtask {
     grid-row: 5 / 6;
     display: flex;
@@ -193,6 +214,11 @@ hr {
     border: #df645f 0.1rem;
     border-style: dashed;
     margin-top: 0.5rem;
+}
+
+#addtask:hover {
+    background-color: #541c1f;
+    cursor: pointer;
 }
 
 #pinkbox {
@@ -253,6 +279,7 @@ hr {
 #white h2 {
     font-weight: 700;
     font-size: 1.2rem;
+    margin: 2rem 0 0 0;
 }
 
 #white h3 {
@@ -337,11 +364,11 @@ footer h4 {
     }
 
     #navbar li {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 
     #activities ul {
-        margin: 1rem 0 1rem 0;
+        margin: 1rem 0.5rem 1rem 0.5rem;
     }
 
     #white {
@@ -362,6 +389,10 @@ footer h4 {
 
     #navbar, #workingon {
         margin: 0 1rem 0 1rem;
+    }
+
+    #navbar li {
+        padding: 0.5rem 0.4rem 0.5rem 0.4rem;
     }
 
     #red h2 {
