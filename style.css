@@ -1,7 +1,9 @@
 
-#red h1, #red h2, #red h3, #red h4, #red p, #red li {
-    color: white;
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+/* RED SECTION */
+
 
 #red {
     background-color: #db524d;
@@ -10,20 +12,54 @@
     grid-template-rows: auto;
 }
 
+#red h1, #red h2, #red h3, #red h4, #red li, #red p {
+    color: white;
+    font-family: Quicksand;
+}
+
+#red h1 {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#red h2 {
+    font-weight: 700;
+}
+
+#red h3 {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    text-transform: uppercase;
+    color: #f0b7b5;
+}
+
+#red h4 {
+    font-size: 1rem;
+    margin: 0.3rem 0 0 0;
+}
+
+#red li {
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+#red p {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
 #navbar {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
+    border-bottom: #be5551;
 }
 
 #logo {
     justify-self: flex-start;
-}
-
-#buttons {
-    background-color: #df645f;
 }
 
 #buttons ul {
@@ -36,9 +72,14 @@
     list-style: none;
 }
 
-#button {
+.button {
     display: block;
+    background-color: #df645f;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
 }
+
+
 
 
 #timer {
@@ -62,16 +103,40 @@
 #activities li {
     list-style: none;
 }
+.buttondark {
+    display: block;
+    background-color: #be5551;
+    border-radius: 0.2rem;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
 
 #clock {
     grid-row: 2 / 3;
     justify-self: center;
 }
 
+#clock h2 {
+    font-size: 6rem;
+    margin: 0 0 1rem 0;
+}
+
 #startbutton {
     grid-row: 3 / 4;
     justify-self: center;
+    background-color: white;
+    border-radius: 0.2rem;
+    margin: 0 0 2rem 0;
 }
+
+#startbutton p {
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #db524d;
+    margin: 1rem 3rem 1rem 3rem;
+}
+
 
 
 
@@ -80,6 +145,7 @@
     grid-row: 3 / 4;
     display: grid;
     grid-template-rows: auto;
+    gap: 0.3rem;
 }
 
 #title {
@@ -89,26 +155,157 @@
 
 #tasks {
     grid-row: 2 / 3;
-    justify-self: center;
+    
 }
 
 #whitebox1 {
     grid-row: 3 / 4;
-    justify-self: center;
+    background-color: white;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 #whitebox2 {
     grid-row: 4 / 5;
-    justify-self: center;
+    background-color: white;    
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#whitebox1 p, #whitebox2 p {
+    color: black;
+    margin: 1rem 0 1rem 2rem;
 }
 
 #addtask {
     grid-row: 5 / 6;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
+    background-color: #c94b46;
+    border-radius: 0.2rem;
+    border: #df645f 0.1rem;
+    border-style: dashed;
+    margin-top: 0.5rem;
 }
 
 #pinkbox {
     grid-row: 6 / 7;
+    display: flex;
+    background-color: #df645f;
+    margin: 1rem 0 5rem 0;
+}
+
+#pinkbox li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+
+
+/* WHITE SECTION */
+
+#white {
+    display: grid;
+    grid-template-columns: auto 30rem auto;
+    grid-template-rows: auto;
+}
+
+#white h1, #white h2, #white h3, #white h4 {
+    color: #541c1f;
+    font-family: Quicksand;
+}
+
+#white p {
+    color: #541c1f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+
+#white li{
+    color: #541c1f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+} 
+
+#white h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 2rem;
+}
+
+#white h2 {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#white h3 {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0;
+    text-transform: uppercase;
+    color: #f0b7b5;
+}
+
+#white h4 {
+    font-size: 1rem;
+    margin: 0.3rem 0 0 0;
+}
+
+#text {
+    grid-column: 2 / 3;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: grid;
+    grid-template-columns: auto 30rem auto;
+    grid-template-rows: auto;
+}
+
+footer p, footer li, footer h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    color: #541c1f;
+}
+
+footer ul {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    list-style: none;
+    margin: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#socials {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     justify-self: center;
 }
 
+footer p {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    justify-self: center;
+}
+
+footer h4 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    justify-self: center;
+}
