@@ -20,6 +20,7 @@
 #red h1 {
     font-weight: 700;
     font-size: 1rem;
+    align-self: center;
 }
 
 #red h2 {
@@ -59,7 +60,7 @@
 }
 
 #logo {
-    justify-self: flex-start;
+    display: flex;
 }
 
 #buttons ul {
@@ -155,23 +156,27 @@
 
 #tasks {
     grid-row: 2 / 3;
-    
+}
+
+hr {
+    border-style: solid;
+    border-color: #f0b7b5;
 }
 
 #whitebox1 {
     grid-row: 3 / 4;
     background-color: white;
     border-radius: 0.2rem;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 80% 20%;
 }
 
 #whitebox2 {
     grid-row: 4 / 5;
     background-color: white;    
     border-radius: 0.2rem;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 80% 20%;
 }
 
 #whitebox1 p, #whitebox2 p {
@@ -195,11 +200,18 @@
     display: flex;
     background-color: #df645f;
     margin: 1rem 0 5rem 0;
+    justify-content: space-around;
+}
+
+#pinkbox ul {
+    padding: 0;
 }
 
 #pinkbox li {
     list-style: none;
     display: inline-block;
+    font-size: 1rem;
+    margin: 0 2rem 0 2rem;
 }
 
 
@@ -309,3 +321,4 @@ footer h4 {
     grid-row: 4 / 5;
     justify-self: center;
 }
+
